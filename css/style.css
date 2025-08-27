@@ -104,7 +104,7 @@ main {
 	}
 
 	section#video {
-		background-image: radial-gradient(#f9d1d1 1em, #ff9fb8 1em);
+		background-image: radial-gradient(#fec9d7 1em, #ff9fb8 1em);
 		background-size: 4em 4em;
 		background-position: center;
 
@@ -116,7 +116,7 @@ main {
 			width: 720px; height: 410px; 
 			margin-inline: auto; 
 			border-radius: 12px;
-			border: 6px solid #79d3be;
+			border: 6px solid #b9eee1;
 			box-shadow: 1em 1em #43272a;
 			transform: rotate(-5deg);
 		}
@@ -131,10 +131,10 @@ main {
 		background: repeating-linear-gradient( -45deg, #e0ecab, #e0ecab 4em, #e9a455 4em, #e9a455 8em );
 		background: repeating-radial-gradient(
 		  circle,
-		  #f9d1d1,
-		  #f9d1d1 4em,
-		  #79d3be 4em, 
-		  #79d3be 8em
+		  #fec9d7,
+		  #fec9d7 4em,
+		  #b9eee1 4em, 
+		  #b9eee1 8em
 		);
 
 		img { 
@@ -168,7 +168,7 @@ main {
 
 		width: fit-content;
 		margin-inline: auto;
-		background: #f9d1d1; 
+		background: #fec9d7; 
 		border: 6px solid #43272a;
 		box-shadow: -8px 8px #43272a;
 		border-radius: 12px;
@@ -187,10 +187,10 @@ main {
 	section#about {
 		background: repeating-radial-gradient(
 		  circle,
-		  #f9d1d1,
-		  #f9d1d1 4em,
-		  #79d3be 4em, 
-		  #79d3be 8em
+		  #fec9d7,
+		  #fec9d7 4em,
+		  #b9eee1 4em, 
+		  #b9eee1 8em
 		);
 		background: repeating-linear-gradient( -45deg, #e0ecab, #e0ecab 4em, #e9a455 4em, #e9a455 8em );
 
