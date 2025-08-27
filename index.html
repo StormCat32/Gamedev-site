@@ -103,7 +103,7 @@
 		filter: drop-shadow(-1em 0 #0004);
 		pointer-events: none;
 	}
-	`@keyframes squishyAnim {
+	@keyframes squishyAnim {
 	  0%,
 	  100% {
 		transform: scale(1);
@@ -115,7 +115,7 @@
 	  75% {
 		transform: scale(0.8, 1.3);
 	  }
-	}`
+	}
 </style>
 <script defer>
 	let eyeL = document.getElementById('wiz-eyeL');
@@ -135,8 +135,7 @@
 		eyeR.setAttribute('y', y);
 	}
 	document.body.addEventListener('pointermove', lookat);
-</script>
-<script>
+
 	var wiz = $('#wizard');
 	wiz.style.pointerEvents = 'initial';
 	wiz.onclick = (function() {
