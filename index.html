@@ -103,6 +103,19 @@
 		filter: drop-shadow(-1em 0 #0004);
 		pointer-events: none;
 	}
+	`@keyframes squishyAnim {
+	  0%,
+	  100% {
+		transform: scale(1);
+		transform-origin: bottom;
+	  }
+	  25% {
+			transform: scale(1.3, 0.8);
+		}
+	  75% {
+		transform: scale(0.8, 1.3);
+	  }
+	}`
 </style>
 <script defer>
 	let eyeL = document.getElementById('wiz-eyeL');
@@ -122,6 +135,26 @@
 		eyeR.setAttribute('y', y);
 	}
 	document.body.addEventListener('pointermove', lookat);
+</script>
+<script>
+	var wiz = $('#wizard');
+	wiz.style.pointerEvents = 'initial';
+	wiz.onclick = (function() {
+		var colours = [ 'red', 'blue', 'darkorchid', 'lime' ];
+		var currentColour = $('#wizard svg #wiz-hat').style.fill;
+		var nextColour;
+		wiz.style.animation = 'none';
+
+		do {
+			nextColour = colours[Math.floor(Math.random() * colours.length) ];
+		} while(nextColour == currentColour);
+
+		$('#wizard svg #wiz-hat').style.fill = nextColour;
+
+		setTimeout(function() {
+			wiz.style.animation = 'squishyAnim 0.22s ease-out';
+		}, 0);
+	});
 </script>
 
 	</main>
