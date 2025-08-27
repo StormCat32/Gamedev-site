@@ -5,6 +5,7 @@
 		<ellipse id="wiz-body" rx="32" ry="24" cx="32" cy="76" style="fill:#eee;stroke:none;"/>
 		<rect id="wiz-eyeL" width="8" height="8" x="16" y="76" rx="3" ry="3" fill="black" />
 		<rect id="wiz-eyeR" width="8" height="8" x="48" y="76" rx="3" ry="3" fill="black" />
+		<rect id="wiz-eye-base" width="8" height="8" x="48" y="76" rx="3" ry="3" fill="black" fill-opacity="0" />
 		<polygon id="wiz-hat" points="32,-10 60,64 4,64" style="fill:red;" />
 	</svg> 
 </div>
@@ -27,9 +28,10 @@
 <script defer>
 	let eyeL = document.getElementById('wiz-eyeL');
 	let eyeR = document.getElementById('wiz-eyeR');
+	let eyeBase = document.getElementById('wiz-eye-base');
 	function lookat(e) {
-		let rect = document.body.getBoundingClientRect();
-		let ang = Math.atan2(e.clientY-(76 - 4),e.clientX-(32 - 6))
+		let rect = eyeBase.getBoundingClientRect();
+		let ang = Math.atan2(e.clientY-(rect.bottom-rect.top+rect.bottom),e.clientX-(rect.left-rect.right+rect.left))
 		let mx = Math.cos(ang);
 		let my = Math.sin(ang);
 		let x = 32 - 6 + (mx * 6);
