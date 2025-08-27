@@ -1,0 +1,28 @@
+
+
+## Edit stuff here
+
+title 		= "WIZARD PUNKS!!!"
+author 		= "StormCat"
+subtitle 	= "A fast-paced, spell-slinging 4-player local party game."
+description = "Create spells by combining the four elements of Air, Earth, Fire and Water, and defeat your fellow wizards with a variety of bombastic magics. "
+keywords 	= "game"
+url 		= "https://stormcatgames.com/"
+email 		= "stormcatdev@gmail.com"
+location 	= "Naarm/Melbourne, AUS"
+
+[link]
+bluesky 	= "https://bsky.app/profile/eyeofstormcat.bsky.social"
+steam 		= "https://store.steampowered.com/app/3332770/WIZARD_PUNKS/"
+itch 		= "https://eyeofstormcat.itch.io/"
+
+## Third Party Services
+[services]
+
+## Umami Analytics (umami.is)
+## Use your Umami API key (https://cloud.umami.is/api-keys)
+# umami 		= "8608179f-c3bb-47d6-9eb9-bc3bf95d7150"
+
+## FontAwesome (fontawesome.com)
+## Use your kit's custom hash (e.g. 'https://kit.fontawesome.com/{YOUR KIT HASH}.js')
+# fontawesome 	= "87224a5bfc"

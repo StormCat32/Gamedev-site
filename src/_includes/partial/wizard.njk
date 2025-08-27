@@ -1,0 +1,43 @@
+<div id="wizard">
+	<svg viewBox="0 0 64 150" xmlns="http://www.w3.org/2000/svg">
+		<line id="wiz-legL" x1="12" y1="76" x2="12" y2="150" style="stroke:black;stroke-width:4" />
+		<line id="wiz-legR" x1="52" y1="76" x2="52" y2="150" style="stroke:black;stroke-width:4" />
+		<ellipse id="wiz-body" rx="32" ry="24" cx="32" cy="76" style="fill:#eee;stroke:none;"/>
+		<rect id="wiz-eyeL" width="8" height="8" x="16" y="76" rx="3" ry="3" fill="black" />
+		<rect id="wiz-eyeR" width="8" height="8" x="48" y="76" rx="3" ry="3" fill="black" />
+		<polygon id="wiz-hat" points="32,0 60,64 4,64" style="fill:red;" />
+	</svg> 
+</div>
+
+<style>
+	#wizard {
+		position: fixed;
+		right: 1em;
+		bottom: 0;
+		height: 33%;
+		width: auto;
+		aspect-ratio: 64 / 150 !important;
+		touch-action: none;
+		filter: drop-shadow(-1em 0 #0004);
+		overflow: clip;
+		pointer-events: none;
+	}
+</style>
+
+<script defer>
+	let eyeL = document.getElementById('wiz-eyeL');
+	let eyeR = document.getElementById('wiz-eyeR');
+	function lookat(e) {
+		let rect = document.body.getBoundingClientRect();
+		let mx = -0.5 + (e.clientX / rect.width);
+		let my = -0.5 + (e.clientY / rect.height);
+		let x = 32 - 6 + (mx * 10);
+		let y = 76 - 4 + (my * 7.5);
+		const spacing = 16;
+		eyeL.setAttribute('x', x - spacing);
+		eyeR.setAttribute('x', x + spacing);
+		eyeL.setAttribute('y', y);
+		eyeR.setAttribute('y', y);
+	}
+	document.body.addEventListener('pointermove', lookat);
+</script>

@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Alagard';
+    src: url('/fonts/Alagard.woff2') format('woff2'),
+        url('/fonts/Alagard.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Body';
+    src: url('../fonts/BasicallyASansSerif-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+
+	--font-heading-main: 'Alagard', serif;
+	--font-body-main: 'Body', sans-serif;
+}
+
+/* CSS reset */
+* { 
+	box-sizing: border-box;
+	margin: 0; padding: 0;
+}
+
+body { 
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+	justify-content: flex-start;
+	align-items: stretch;
+
+	font-family: var(--font-body-main);
+	color: #43272a;;
+}
+
+h1 { 
+	font-family: var(--font-heading-main); 
+	margin-inline: auto; max-width: 800px; margin-block: 1em;
+	text-shadow: 0 0.1em #feebe0;}
+
+a { 
+		color: #43272a; 
+		&:hover { color: #feebe0; background-color: #43272a; }
+	}
+
+header {
+	display: none;
+	background-color: #feebe0;
+
+	font-size: 1.2em;
+}
+
+main {
+	flex: 2;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	background-color: orange;
+
+	p { 
+			font-size: 2em; 
+			margin-inline: auto;
+			max-width: 50ch;
+			line-height: 1.3em;
+			//text-shadow: 0 0.1em #feebe0;
+		}
+
+	> * {
+		width: 100%;
+		padding-block: 4em;
+		text-align: center;
+	}
+	
+	section#splash {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+
+		text-align: center;
+
+		background-color: #b1c8ff;
+		background-image: url('/images/key-art.png');
+		background-size: cover;
+		background-position: center;
+		background-blend-mode: soft-light;
+
+		img { max-width:90%; }
+
+		h1 { 
+			font-family: 'Body';
+			font-size: 2.5em; 
+			word-break: keep-all;
+
+			&:hover { text-shadow: 0.3em -0.3em #feebe0; transition: text-shadow 0.2s ease-in-out }
+		}
+		p { font-size: 1.3em; }
+	}
+
+	section#video {
+		background-image: radial-gradient(#f9d1d1 1em, #ff9fb8 1em);
+		background-size: 4em 4em;
+		background-position: center;
+
+		display: flex;
+		flex-flow: row wrap;
+
+		iframe { 
+			display: block; 
+			width: 720px; height: 410px; 
+			margin-inline: auto; 
+			border-radius: 12px;
+			border: 6px solid #79d3be;
+			box-shadow: 1em 1em #43272a;
+			transform: rotate(-5deg);
+		}
+
+		p {
+			border-radius: 12px;
+			margin-inline: 1em;
+		}
+	}
+
+	section#screenshots { 
+		background: repeating-linear-gradient( -45deg, #e0ecab, #e0ecab 4em, #e9a455 4em, #e9a455 8em );
+		background: repeating-radial-gradient(
+		  circle,
+		  #f9d1d1,
+		  #f9d1d1 4em,
+		  #79d3be 4em, 
+		  #79d3be 8em
+		);
+
+		img { 
+				border-radius: 12px;
+				border: 6px solid #f54a93;
+
+				&:hover { 
+					transform: rotate(5deg);
+				}
+			}
+	}
+
+	.gallery {
+			display: grid;
+			grid-template-columns: repeat(3, auto);
+
+			grid-gap: 8px;
+			width: 90%;
+			margin-inline: auto;
+
+			img { 
+				width: 100%;
+			}
+		}
+
+	#wishlist {
+		display: block;
+		font-family: var(--font-heading-main);
+		color: #43272a;
+		text-decoration: none;
+
+		width: fit-content;
+		margin-inline: auto;
+		background: #f9d1d1; 
+		border: 6px solid #43272a;
+		box-shadow: -8px 8px #43272a;
+		border-radius: 12px;
+		padding: 0.3em;
+		font-size: 3em; 
+
+		&:hover { transform: rotate(5deg);  border-color: #f54a93; color: #f54a93; box-shadow: -8px 8px#f54a93; transition: all 0.1s linear;}
+
+		&:active { transform: translate(-8px, 8px) rotate(5deg); box-shadow: none; transition: none; }
+	}
+
+	section#description {
+		background: #fcb92a;
+	}
+
+	section#about {
+		background: repeating-radial-gradient(
+		  circle,
+		  #f9d1d1,
+		  #f9d1d1 4em,
+		  #79d3be 4em, 
+		  #79d3be 8em
+		);
+		background: repeating-linear-gradient( -45deg, #e0ecab, #e0ecab 4em, #e9a455 4em, #e9a455 8em );
+
+	}
+
+}
+
+footer { 
+	padding: 0.5em;
+	background-color: #b9eee1;
+	#credits {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	main {
+		p { font-size: 1.2em; margin-inline: 1em; }
+		section#splash { h1 { font-size: 1.5em; } }
+
+		.gallery { grid-template-columns: auto; }
+		iframe { width: 100%; height: 200px; }
+
+		section#splash {
+			img { margin-top: 2em }
+			h1 { margin-inline: 1em; margin-block: 2em; }
+		}
+
+		section#screenshots { img { border-width: 4px; } }
+
+		section#video { 
+			padding-inline: 2em;
+			iframe { width: 100%; height: 200px; border-width: 4px; box-shadow: 10px 10px; } 
+		}
+
+		#wishlist { font-size: 2.2em; border-width: 4px; box-shadow: -5px 5px;}
+	}
+
+	footer {
+		height: 30vh;
+	}
+}

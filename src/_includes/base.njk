@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+	<title>{{ title }} / {{ site.title }}</title>
+
+	<!-- Meta -->
+	<meta name="author" content="{{ site.title }}">
+	<meta name="keywords" content="{{ site.keywords }}">
+
+	{% if blurb %}
+	<meta name="description" content="{{blurb}}">
+	<meta property="og:description" content="{{blurb}}" />
+	<meta name="twitter:description" content="{{blurb}}" />
+	{% else %}
+	<meta name="description" content="{{ site.description }}">
+	<meta property="og:description" content="{{ site.description }}" />
+	<meta name="twitter:description" content="{{ site.description }}" />
+	{% endif %}
+
+	<meta property="og:title" content="{{ site.title }} / {{ title }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ site.url }} " />
+	<meta property="og:image" content="preview.png" />
+	<meta name="twitter:image" content="preview.png" />
+	
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="{{ site.twitter }}" />
+	<meta name="twitter:title" content="{{ site.title }} / {{ title }}" />
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	
+	{% if site.services.fontawesome %}
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/{{site.services.fontawesome}}.js" crossorigin="anonymous" defer></script>
+	{% endif %}
+
+	{% if site.services.umami %}
+	<!-- Umami Analytics -->
+	<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ site.services.umami }}"></script>
+	{% endif %}
+
+	<!-- Scripts -->
+	<script src="/js/script.js" defer></script>
+	{% block scripts %}{% endblock %}
+</head>
+
+<body>
+	<script>
+		if (typeof(theme) === 'undefined') { let theme = null; }
+		theme = localStorage.getItem('theme') || 'system';
+		document.documentElement.dataset.theme = theme;
+	</script>
+
+	<header>
+		<a href="/" id="masthead">{{ site.title }}</a>
+		<nav>
+			<ul>
+				<li><a href="/presskit/">Presskit</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		{{ content | safe }}
+	</main>
+
+	<footer>
+		<section id="credits">
+			<p>{{ site.title }} by {{site.author}} / website by <a href="https://cecilerichard.design/">cecile</a> and <a href="https://gleeson.dev/">andy</a> &copy; <span id="currentYear">2025</span><script>document.getElementById("currentYear").innerText = new Date().getFullYear();</script></p>
+		</section>
+	</footer>
+</body>
+</html>
