@@ -36,3 +36,5 @@ permalink: /
 
 <!-- PUNK -->
 {% include "partial/wizard.njk" %}
+
+<script src="partial/squishscript.js" defer></script>
