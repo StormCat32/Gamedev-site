@@ -82,8 +82,9 @@ Hugh Craig, Developer.
 
 ## Socials
 
-- [Bluesky](https://eyeofstormcat.bsky.social)
-- [X](https://x.com/EyeOfStormCat)
+- [Bluesky]({{site.link.bluesky}})
+- [X (Formerly Twitter)]({{site.link.x}})
+- [Tumblr]({{ site.link.tumblr}})
 
 </div>
 <div id="description">
