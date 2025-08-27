@@ -109,10 +109,11 @@
 	let eyeR = document.getElementById('wiz-eyeR');
 	function lookat(e) {
 		let rect = document.body.getBoundingClientRect();
-		let mx = -0.5 + (e.clientX / rect.width);
-		let my = -0.5 + (e.clientY / rect.height);
-		let x = 32 - 6 + (mx * 10);
-		let y = 76 - 4 + (my * 7.5);
+		let ang = Math.atan2(e.clientY-(76 - 4),e.clientX-(32 - 6))
+		let mx = Math.cos(ang);
+		let my = Math.sin(ang);
+		let x = 32 - 6 + (mx * 6);
+		let y = 76 - 4 + (my * 6);
 		const spacing = 16;
 		eyeL.setAttribute('x', x - spacing);
 		eyeR.setAttribute('x', x + spacing);
