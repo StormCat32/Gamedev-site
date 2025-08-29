@@ -63,8 +63,9 @@
 	document.head.appendChild(css);
 
 	wiz.onclick = (function() {
+		var wizHat = document.getElementById('wiz-hat');
 		var colours = [ 'red', 'blue', 'darkorchid', 'lime' ];
-		var currentColour = $('#wizard svg #wiz-hat').style.fill;
+		var currentColour = wizHat.style.fill;
 		var nextColour;
 		wiz.style.animation = 'none';
 
@@ -72,7 +73,7 @@
 			nextColour = colours[Math.floor(Math.random() * colours.length) ];
 		} while(nextColour == currentColour);
 
-		$('#wizard svg #wiz-hat').style.fill = nextColour;
+		wizHat.style.fill = nextColour;
 
 		setTimeout(function() {
 			wiz.style.animation = 'squishyAnim 0.22s ease-out';
