@@ -8,12 +8,12 @@ permalink: /
 <section id="splash">
 	<img src="/images/title.png" alt="{{ site.title }}">
 	<h1>{{ site.subtitle }}</h1>
-	<a href="https://store.steampowered.com/app/3332770/WIZARD_PUNKS/" id="wishlist" target="_blank">Wishlist on Steam!</a>
+	<a href="{{ site.link.steam }}" id="wishlist" target="_blank">Wishlist on Steam!</a>
 </section>
 
 <!-- VIDEO EMBED -->
 <section id="video">
-	<iframe src="https://www.youtube.com/embed/oJ1gdNHIuD0?si=mkQ_BvihB7ZymjRf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe src="{{ site.link.trailer }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 
 <section id="description">
@@ -31,10 +31,8 @@ permalink: /
 
 <!-- ABOUT -->
 <section id="about">
-	<p>Made by <a href="https://eyeofstormcat.bsky.social/">StormCat</a>.<br>Find out more in the <a href="/presskit">presskit</a>.</p>
+	<p>Made by <a href="{{ site.link.bluesky }}">StormCat</a>.<br>Find out more in the <a href="/presskit">presskit</a>.</p>
 </section>
 
 <!-- PUNK -->
 {% include "partial/wizard.njk" %}
-
-<script src="partial/squishscript.js" defer></script>

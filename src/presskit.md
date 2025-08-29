@@ -131,6 +131,6 @@ Each spell you create uses up to three elements. One for the base, and two for t
 </div>
 
 # Trailer
-<iframe width="560" height="315"  src="https://www.youtube.com/embed/oJ1gdNHIuD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315"  src={{site.link.trailer}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </div>
