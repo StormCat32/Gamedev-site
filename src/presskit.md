@@ -85,6 +85,7 @@ Hugh Craig, Developer.
 - [Bluesky]({{site.link.bluesky}})
 - [X (Formerly Twitter)]({{site.link.x}})
 - [Tumblr]({{ site.link.tumblr}})
+- [Instagram]({{ site.link.instagram}})
 
 </div>
 <div id="description">
