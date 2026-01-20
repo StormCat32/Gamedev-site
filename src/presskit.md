@@ -82,10 +82,12 @@ Hugh Craig, Developer.
 
 ## Socials
 
+- [Instagram]({{site.link.instagram}})
+- [TikTok]({{site.link.tiktok}})
+- [YouTube]({{site.link.youtube}})
 - [Bluesky]({{site.link.bluesky}})
 - [X (Formerly Twitter)]({{site.link.x}})
-- [Tumblr]({{ site.link.tumblr}})
-- [Instagram]({{ site.link.instagram}})
+- [Tumblr]({{site.link.tumblr}})
 
 </div>
 <div id="description">
@@ -107,8 +109,8 @@ Each spell you create uses up to three elements. One for the base, and two for t
 ## Key Features
 
 - Local Multiplayer For Up To 4 Players
-- 2 Punktastic Game Modes
-- 20 Unlockable Palettes
+- 2 Punktastic Spell Modes
+- 20+ Unlockable Palettes
 - 4 Unique Elements - With 68 Unique Spell Combinations
 - CPU Opponents With 3 Different Difficulties
 - Original Wizarding Soundtrack
