@@ -21,6 +21,7 @@ youtube		= "https://www.youtube.com/@EyeOfStormCat"
 steam 		= "https://store.steampowered.com/app/3332770/WIZARD_PUNKS/"
 itch 		= "https://eyeofstormcat.itch.io/wizard-punks"
 trailer 	= "https://www.youtube.com/embed/l1bo0CW3JM0?si=6h5j_ZkV4ohk2nkn"
+demo_trailer = "https://www.youtube.com/embed/BzAus_zDv14?si=94EDXxbsGXhyxnoF"
 
 ## Third Party Services
 [services]

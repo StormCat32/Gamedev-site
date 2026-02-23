@@ -106,12 +106,17 @@ With its rapid-fire, hilarity-inducing, tense gameplay **WIZARD PUNKS!!!** is a 
 
 Each spell you create uses up to three elements. One for the base, and two for the modification effects. Create a bouncing, homing laser by creating a spell with **Fire/Air/Earth** or use the same elements to create an exploding, homing boulder with **Earth/Fire/Air**.
 
+## Summon Shield
+
+Create a shield to counterspell an opposing Wizard's attack.
+With precise timing and good reactions speeds, not even a pebble or a gust of wind will be able to hit you!
+
 ## Key Features
 
 - Local Multiplayer For Up To 4 Players
 - 2 Punktastic Spell Modes
 - 20+ Unlockable Palettes
-- 4 Unique Elements - With 68 Unique Spell Combinations
+- 4 Unique Elements - With 50+ Unique Spell Combinations
 - CPU Opponents With 3 Different Difficulties
 - Original Wizarding Soundtrack
 
@@ -135,5 +140,8 @@ Each spell you create uses up to three elements. One for the base, and two for t
 
 # Trailer
 <iframe width="560" height="315"  src={{site.link.trailer}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+# Demo Trailer
+<iframe width="560" height="315"  src={{site.link.demo_trailer}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </div>
