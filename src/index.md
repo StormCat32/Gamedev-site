@@ -8,7 +8,7 @@ permalink: /
 <section id="splash">
 	<img src="/images/title.png" alt="{{ site.title }}">
 	<h1>{{ site.subtitle }}</h1>
-	<a href="{{ site.link.steam }}" id="wishlist" target="_blank">Wishlist on Steam!</a>
+	<a href="{{ site.link.steam }}" id="wishlist" target="_blank">Buy on Steam now!</a>
 </section>
 
 <!-- VIDEO EMBED -->
